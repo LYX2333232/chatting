@@ -1,7 +1,7 @@
 <!--pages/chat/chat.wxml-->
 <view class="all">
+  <image src="/images/upper.png" mode="aspectFit" class="img"/>
   <navigation-bar title="答疑社区"></navigation-bar>
-  <image src="/images/upper.png" mode="widthFix" class="img"/>
   <view class="upper"></view>
   <view class="main">
     <community></community>
