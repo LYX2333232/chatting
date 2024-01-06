@@ -1,0 +1,54 @@
+/* components/chatting/chatting.wxss */
+.all{
+  background-color: #fff;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top .left{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.top .left image{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.top .left text{
+  color: #17C0B4;
+}
+
+.main{
+  margin: 2vh 0;
+}
+
+.image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.image image{
+  margin: 0 0.3rem;
+}
+
+
+.video video{
+  width: 100%;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

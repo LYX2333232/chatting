@@ -1,0 +1,33 @@
+<!--components/community/community.wxml-->
+<view class="tabBar">
+  <view class="tab-item {{currentTab == 0 ? 'activate' : 'noactivate'}}" bind:tap="switchBar" data-index="0">
+    鲤鱼小圈
+  </view>
+  <view class="tab-item {{currentTab == 1 ? 'activate' : 'noactivate'}}" bind:tap="switchBar" data-index="1">
+    问题求助
+  </view>
+</view>
+
+<view>
+  <view class="green"></view>
+  <view class="my">
+    我的
+  </view>
+  <view class="publish">
+    发布
+  </view>
+</view>
+<view wx:if="{{currentTab == 0}}" style="display: flex; flex-direction: column">
+  <view class="top">
+    <view class="left"/>
+    <input type="text" placeholder="请输入你感兴趣的内容"/>
+    <view class="right">
+      <view class="info" wx:if="{{messages > 0}}">{{showNumber}}</view>
+      <image src="/images/ring.png" mode="scaleToFill"/>
+    </view>
+  </view>
+  <view wx:for="{{messagesList}}">
+    <chatting obj="{{item}}" ></chatting>
+  </view>
+</view>
+<view wx:else>问题求助</view>

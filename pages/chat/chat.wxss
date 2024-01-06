@@ -1,0 +1,23 @@
+/* pages/chat/chat.wxss */
+.all{
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.img{
+  position: absolute;
+  top: 1.1rem;
+  z-index: -1;
+}
+
+.upper{
+  width: 100%;
+  height: 3rem;
+  background-color: transparent;
+}
+
+.main{
+  background: linear-gradient(to right, #F6EDFE,#E8F9F9);
+  border-radius: 1.5rem 1.5rem 0 0;
+}

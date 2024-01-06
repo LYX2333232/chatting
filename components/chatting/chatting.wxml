@@ -1,0 +1,37 @@
+<!--components/chatting/chatting.wxml-->
+<view class="all">
+  <view class="top">
+    <view class="left">
+      <image src="{{obj.avatar}}" mode="scaleToFill"/>
+      <text>{{obj.name}}</text>
+    </view>
+    <view class="right">
+      {{time}}
+    </view>
+  </view>
+  <view class="main">
+    <view style="width: 100%;overflow-wrap: break-word;">
+      {{obj.message}}
+    </view>
+    <view class="image" wx:if="{{obj.images.length > 0}}">
+      <image wx:for="{{obj.images}}" src="{{item}}" mode="widthFix"/>
+    </view>
+    <view class="vedio" wx:if="{{obj.video.length > 0}}">
+      <video src="{{obj.video[0]}}" style="width:100%;height: auto;" />
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="upvote">
+      <image src="/images/upvote.png" alt="点赞" style="height: 1rem; width: 1rem;" />
+      <text>{{obj.upvotes}}</text>
+    </view>
+    <view class="comment">
+      <image src="/images/comment.png" alt="点赞" style="height: 1rem; width: 1rem;" />
+      <text>{{obj.comments}}</text>
+    </view>
+    <view class="share">
+      <image src="/images/share.png" alt="点赞" style="height: 1rem; width: 1rem;" />
+      <text>{{obj.shares}}</text>
+    </view>
+  </view>
+</view>
